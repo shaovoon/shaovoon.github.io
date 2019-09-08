@@ -19,13 +19,13 @@
 
 			var img = document.getElementById("photo_id");
 
-            var w_ratio_bmp = theCanvas.width / theCanvas.height;
-            var w_ratio_jpg = img.width / img.height;
+            var w_ratio_ctx = theCanvas.width / theCanvas.height;
+            var w_ratio_img = img.width / img.height;
 
             ctx.fillStyle = "black";
             ctx.fillRect(0, 0, theCanvas.width, theCanvas.height);
 
-			if (w_ratio_jpg >= w_ratio_bmp)
+			if (w_ratio_img >= w_ratio_ctx)
 			{
 				var width2 = theCanvas.width;
 				var height2 = (theCanvas.width / img.width) * img.height;
