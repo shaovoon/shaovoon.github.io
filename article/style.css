@@ -1,13 +1,14 @@
 #inner {  
-  width:97%;
+  width:100%;
 }
 
 #outer {
-  width:98%;
+  width:100%;
+  font-size: 120%;
 }
 
 .outer_obj {
-  width:96%;
+  width:100%;
 }
 
 p, .link {
