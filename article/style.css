@@ -1,17 +1,13 @@
 #inner {  
-  width:96%;
+  width:97%;
 }
 
 #outer {
   width:98%;
-  display: flex;
-  justify-content: center;
 }
 
 .outer_obj {
-  width:100%;
-  display: flex;
-  justify-content: center;
+  width:96%;
 }
 
 p, .link {
