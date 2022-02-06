@@ -1,14 +1,16 @@
 #inner {  
-  width:100%;
-}
-
-#outer {
-  width:100%;
+  width:90%;
   font-size: 120%;
 }
 
+#outer {
+  width:90%;
+}
+
 .outer_obj {
-  width:100%;
+  width:90%;
+  display: flex;
+  justify-content: center;
 }
 
 p, .link {
