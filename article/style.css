@@ -1,6 +1,6 @@
-#inner {  
+#inner, h3 {  
   width:90%;
-  font-size: 150%;
+  font-size: 170%;
 }
 
 #outer {
@@ -29,9 +29,9 @@ span {
 }
 
 @media (hover: hover) and (pointer: fine) {
-	#inner {  
+	#inner, h3 {  
 	  width:650px;
-      font-size: 100%;
+      font-size: 120%;
 	}
 
 	#outer {
