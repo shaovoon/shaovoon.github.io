@@ -1,0 +1,28 @@
+#inner {  
+  width:650px;
+}
+
+#outer {
+  width:99%;
+  display: flex;
+  justify-content: center;
+}
+
+.outer_obj {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+p, .link {
+  font-size: 120%;
+}
+
+.bigger_font {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+span {
+  font-weight: bold;
+}
