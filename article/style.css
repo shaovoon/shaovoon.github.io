@@ -1,4 +1,4 @@
-#inner, h3 {  
+#inner{  
   width:90%;
   font-size: 170%;
 }
@@ -13,6 +13,10 @@
   width:90%;
   display: flex;
   justify-content: center;
+}
+
+h3, p {
+  text-align: justify;
 }
 
 h3, p, .link {
@@ -44,6 +48,10 @@ span {
 	  width:100%;
 	  display: flex;
 	  justify-content: center;
+	}
+
+	h3, p {
+	  text-align: justify;
 	}
 
 	h3, p, .link {
