@@ -1,16 +1,16 @@
 #inner{  
-  width:90%;
+  width:100%;
   font-size: 170%;
 }
 
 #outer {
-  width:90%;
+  width:96%;
   display: flex;
   justify-content: center;
 }
 
 .outer_obj {
-  width:90%;
+  width:100%;
   display: flex;
   justify-content: center;
 }
@@ -21,6 +21,10 @@ h3, p {
 
 h3, p, .link {
   font-size: 170%;
+}
+
+h2 {
+  font-size: 180%;
 }
 
 .bigger_font {
