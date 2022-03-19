@@ -27,15 +27,11 @@ h3, p {
 }
 
 h3, p, .link {
-  font-size: 170%;
-}
-
-h2 {
-  font-size: 180%;
+  font-size: 100%;
 }
 
 .bigger_font {
-  font-size: 180%;
+  font-size: 140%;
   font-weight: bold;
 }
 
