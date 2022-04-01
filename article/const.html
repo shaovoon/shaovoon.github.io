@@ -1,0 +1,93 @@
+<html>
+<head>
+  <title>Const Correctness Taken Out of C++!</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="outer">
+<div id="inner">
+<div class="outer_obj"><h1>Const Correctness Taken Out of C++!</h1></div>
+
+<p>Const object is a cornerstone of C++ (not to be confused with the immutable object in functional languages). No other computer language has const object. Popular languages, like C# and JavaScript, can only declare const <strong>basic type</strong> variables. Const object has always been a source of added complexity to the C++ language. Const correctness requires to add in the language, a <strong>mutable</strong> keyword and <strong>const_cast</strong> to cast away the constness for modifying member within a const member function. These two features break the semantics of constness. But without them, it is not possible to write a const getter that implements <a href="https://en.wikipedia.org/wiki/Memoization" rel="noopener noreferrer" target="_blank">memoization</a> under the hood.</p>
+
+<p>Despite the code safety the feature introduced, const correctness of C++ has never been put forward as a fix to any of the <a href="https://cwe.mitre.org/" rel="noopener noreferrer" target="_blank">Common Weakness Enumeration</a> (CWE) vulnerabilities. What const correctness (and its colossal efforts to maintain so) is able to do is to prevent the accidental modification of in-only const reference argument inside a function call.</p>
+
+<p>Object-Oriented Programming (OOP) languages, like C++, enjoy tremendous success and popularity precisely because OOP models after the real world so well. Like Greek philosopher Heraclitus said, &quot;The only constant in life is change!&quot;. Therefore, it has been proposed to remove the constant object in C++, leaving only constant basic types. Future C++ compilers shall ignore the const declaration of functions and treat them as non-const. If both const and non-const versions of the same function exist, only the non-const one shall be considered for compilation.</p>
+
+<div class="outer_obj"><h2>What keeps Bjarne Stroustrup up at night?</h2></div>
+
+<div class="outer_obj"><p><strong>Answer:</strong> The growing enormity of C++ complexity.</p></div>
+
+<p class="outer_obj"><img src="cpp_inventor.jpg" alt="" width="300" height="344"></img></p>
+<div class="outer_obj_small"><p>Portrait of middle-aged Bjarne Stroustrup (Courtesy of Jeniffer Kohnke)</p></div>
+
+<p>To address the C++ language complexity, Bjarne Stroustrup had founded the C-- (pronounced as &quot;C deduct deduct&quot; and &quot;Cdd&quot; in abbreviation) committee. There will be no proposal submission/approval process in C-- committee. Every week, all C-- members come together to vote out an existing C++ feature.</p>
+
+<h3><img src="open_quote.png" alt="" width="33" height="32">Within C++, there is a much smaller and cleaner language struggling to get out&quot; - Bjarne Stroustrup, inventor of C++.</h3>
+
+<h3><img src="open_quote.png" alt="" width="33" height="32">Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.&quot; - Antoine de Saint-Exupery, pioneering aviator.</h3>
+
+<h3><img src="open_quote.png" alt="" width="33" height="32">You have to work hard to get your thinking clean to make it simple.&quot; - Steve Jobs, co-founder of Apple Computer and Pixar Animations.</h3>
+
+<h3><img src="open_quote.png" alt="" width="33" height="32">Simplicity is the ultimate sophistication.&quot; - Leonardo Da Vinci, painter, engineer, scientist, theorist, sculptor and architect.</h3>
+
+<h3><img src="open_quote.png" alt="" width="33" height="32">Less is more.&quot; - Ludwig Mies van der Rohe, German-American architect.</h3>
+
+<h2>Testimonial section: Read what these famous people have to say about C--!</h2>
+
+<p class="outer_obj"><img src="scott_meyers.jpg" alt="" width="225" height="225"></p>
+
+<p>&quot;I am the first member to join C-- committee. My number 1 task is to revert &apos;Forwarding Reference&apos; back to &apos;Universal Reference&apos;!&quot; – <span>Scott Meyers, C++ retiree and C-- first joiner</span></p>
+
+<p class="outer_obj"><img src="mayim_bialik.jpg" alt="" width="346" height="260"></p>
+
+<p>&quot;Neuroscience has shown the human brain can only focus maximum 4 pieces of information at any given time. It&apos;s mind-boggling that why decades of neuroscience studies haven&apos;t gone into computer language evolution until now! Lesser (language) rules to keep track of means less coding mistake and more robust secure system.&quot; - <span>Mayim Bialik, neuroscientist and actress on the television show &quot;The Big Bang Theory&quot;</span></p>
+
+<p class="outer_obj"><img src="gabydosreis.jpg" alt="" width="280" height="280"></p>
+
+<p>&quot;In this year&apos;s CddCon (renamed from CppCon), Microsoft announced the latest Visual C++ with the option to remove the C++ feature you do not want. What?! Why isn&apos;t modules on the selection list?! Hey, you are not supposed to remove the feature proposed by me! Those proposals took years of painstaking efforts to write! I shredded 5 pounds before it was approved!&quot; - <span>Gabriel Dos Reis - Principal Software Development Engineer at Microsoft</span></p>
+
+<p class="outer_obj"><img src="herb_sutter.jpg" alt="" width="216" height="297"></p>
+
+<p>&quot;There are mass resignations in the C++ committee to jump onto the bandwagon of C--! At this rate, there won&apos;t be enough members to ratify C++23.&quot; - <span>Herb Sutter, C++ Committee Chairman</span></p>
+
+<p class="outer_obj"><img src="tim_cook.jpg" alt="" width="224" height="282"></p>
+
+<p>&quot;Apple has been quietly monitoring the C-- development and secretly working on Swift&apos;s replacement for quite some time. We have not forgotten you for those Mac developers who are still on Objective-C. Swift and Objective-C are to be replaced by Sloth and Subjective-C.&quot; - <span>Tim Cook, CEO of Apple</span></p>
+
+<p class="outer_obj"><img src="anders.jpg" alt="" width="251" height="251"></p>
+
+<p>&quot;Not to be left behind by C--, Microsoft has come up with CBlunt and Visual Advance.Net to replace CSharp and Visual Basic.Net!&quot; - <span>Anders Hejlsberg, inventor of CSharp</span></p>
+
+<p class="outer_obj"><img src="trump.jpg" alt="" width="264" height="300"></p>
+
+<p>&quot;Up against MANGA and to make America great again, the only way is to rewrite my Truth Social in <strong>*PURE*</strong> C--!&quot; - <span>Donald Trump, ex-POTUS</span></p>
+
+<p class="outer_obj"><img src="pat-gelsinger.jpg" alt="" width="236" height="331"></p>
+
+<p>&quot;At Intel, we believe Bjarne Stroustrup is onto something and his new approach to computer language is transferable to processor technology. Right now, four efficiency cores take up the silicon estate equivalent to one performance core, but together, they provide more performance than a P core. Intel is experimenting with adding more E cores and fewer P cores in the future product line-up. By removing hyperthreading, superscalar pipelining, out-of-order execution and other less-used features also mean less silicon, more yield, and eliminating Spectre and Meltdown type of vulnerabilities.&quot; - <span>Patrick P. Gelsinger, CEO of Intel</span></p>
+
+<p class="outer_obj"><img src="sundar_pichai3.jpg" alt="" width="268" height="268"></p>
+
+<p>&quot;Bjarne Stroustrup earth-shattering C-- announcement has caused such an upheaval in the software development world that even Google takes notice. Google believes it can also be applied to software frameworks. Google shall slowly remove the latest Angular version one by one down to AngularJS. Google advocates developers to Be Home On-Time (HOT), Off Work On-Time (OWOT), and stop chasing after the latest/greatest software frameworks.&quot; - <span>Sundar Pichai, CEO of Google</span></p>
+
+<p class="outer_obj"><img src="mandalorian.jpg" alt="" width="407" height="268"></p>
+
+<p>&quot;Coming from a C# background to C++, it baffles me that why C++ has copy constructor. C# doesn't have it and I have never had a need to copy objects in C#. Because copy constructor is slow, C++11 came up with move constructor. Complexity(copy ctor) begets even more complexity(move ctor). Simple is the way to go. C-- is the right direction. This is the way.&quot; - <span>Mandalorian, bounty hunter</span></p>
+
+<p class="bigger_font">Happy April Fool!</p>
+
+<p>Do note that C-- and the testimonials are not real, they are jokes to bring laughter and in no way did these great persons make those statements herein. However, before the testimonial section, all the quotes are genuinely and correctly attributed to their speakers. Hope you have a good laugh at my April Fool&apos;s post. <strong>Note:</strong> the jokes are not meant to be taken seriously. If you crave more, please have a look at previous years&apos; jokes.</p>
+
+<ul>
+<li class="link">2019: <a href="https://codingtidbit.com/2019/04/01/c22-fullptr-to-replace-nullptr/" rel="noopener noreferrer" target="_blank">C++23: fullptr to replace nullptr</a></li>
+<li class="link">2020: <a href="https://codingtidbit.com/2020/04/01/c23-mutable-string_view/" rel="noopener noreferrer" target="_blank">C++23: Mutable string_view</a></li>
+<li class="link">2021: <a href="https://codingtidbit.com/2021/04/01/c23-and-to-be-replaced-by-operator/" rel="noopener noreferrer" target="_blank">C++23: -&gt; and :: to be replaced by . operator</a></li>
+</ul>
+
+<p>See you next year!</p><br/>
+
+</div>
+
+</body>
+</html>
