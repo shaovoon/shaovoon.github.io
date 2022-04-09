@@ -8,6 +8,8 @@
 <div id="inner">
 <div class="outer_obj"><h1>Const Correctness Taken Out of C++!</h1></div>
 
+<p><em>Posted on 2022-04-01</em></p>
+
 <p>Const object is a cornerstone of C++ (not to be confused with the immutable object in functional languages). No other computer language has const object. Popular languages, like C# and JavaScript, can only declare const <strong>basic type</strong> variables. Const object has always been a source of added complexity to the C++ language. Const correctness requires to add in the language, a <strong>mutable</strong> keyword and <strong>const_cast</strong> to cast away the constness for modifying member within a const member function. These two features break the semantics of constness. But without them, it is not possible to write a const getter that implements <a href="https://en.wikipedia.org/wiki/Memoization" rel="noopener noreferrer" target="_blank">memoization</a> under the hood.</p>
 
 <p>Despite the code safety the feature introduced, const correctness of C++ has never been put forward as a fix to any of the <a href="https://cwe.mitre.org/" rel="noopener noreferrer" target="_blank">Common Weakness Enumeration</a> (CWE) vulnerabilities. What const correctness (and its colossal efforts to maintain so) is able to do is to prevent the accidental modification of in-only const reference argument inside a function call.</p>
@@ -80,9 +82,9 @@
 <p>Do note that C-- and the testimonials are not real, they are jokes to bring laughter and in no way did these great persons make those statements herein. However, before the testimonial section, all the quotes are genuinely and correctly attributed to their speakers. Hope you have a good laugh at my April Fool&apos;s post. <strong>Note:</strong> the jokes are not meant to be taken seriously. If you crave more, please have a look at previous years&apos; jokes.</p>
 
 <ul>
-<li class="link">2019: <a href="https://codingtidbit.com/2019/04/01/c22-fullptr-to-replace-nullptr/" rel="noopener noreferrer" target="_blank">C++23: fullptr to replace nullptr</a></li>
-<li class="link">2020: <a href="https://codingtidbit.com/2020/04/01/c23-mutable-string_view/" rel="noopener noreferrer" target="_blank">C++23: Mutable string_view</a></li>
-<li class="link">2021: <a href="https://codingtidbit.com/2021/04/01/c23-and-to-be-replaced-by-operator/" rel="noopener noreferrer" target="_blank">C++23: -&gt; and :: to be replaced by . operator</a></li>
+<li class="link">2019: <a href="https://codingtidbit.com/2019/04/01/c22-fullptr-to-replace-nullptr/" target="_blank">C++23: fullptr to replace nullptr</a></li>
+<li class="link">2020: <a href="https://codingtidbit.com/2020/04/01/c23-mutable-string_view/" target="_blank">C++23: Mutable string_view</a></li>
+<li class="link">2021: <a href="https://codingtidbit.com/2021/04/01/c23-and-to-be-replaced-by-operator/" target="_blank">C++23: -&gt; and :: to be replaced by . operator</a></li>
 </ul>
 
 <p>See you next year!</p><br/>
